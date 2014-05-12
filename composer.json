@@ -1,5 +1,5 @@
 {
-    "name": "seostats/seostats",
+    "name": "altname/seostats",
     "type": "library",
     "description": "SEOstats is a powerful open source PHP library to request a bunch of SEO relevant metrics for any website.",
     "keywords": ["SEO","Pagerank","Backlinks","Google","Mozscape","SEOmoz","Sistrix","Open Site Explorer","SEMRush","Alexa"],
@@ -7,6 +7,12 @@
     "version": "2.5.2",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Anton Taranovskyi",
+            "email": "anton.taranovskyi@gmail.com",
+            "homepage": "https://github.com/altname",
+            "role": "Creator, Developer"
+        },
         {
             "name": "Stephan Schmitz",
             "email": "eyecatchup@gmail.com",
