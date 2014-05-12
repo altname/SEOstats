@@ -119,7 +119,7 @@ class Alexa extends SEOstats
         */
         
         $xpath = self::_getXPath($url);
-        $nodes = @$xpath->query("//*[@id='traffic-rank-content']/div/span[2]/div[1]/span/span/div/strong/a");
+        $nodes = @$xpath->query("//*[@id='traffic-rank-content']/div/span[2]/div[1]/span/span/div/strong");
 
         return !$nodes->item(0) ? parent::noDataDefaultValue() :
             self::retInt( strip_tags($nodes->item(0)->nodeValue) );
@@ -171,8 +171,8 @@ class Alexa extends SEOstats
     public static function getCountryRank($url = false)
     {
         $xpath = self::_getXPath($url);
-        $node1 = @$xpath->query("//*[@id='traffic-rank-content']/div/span[2]/div[2]/span/span/h4/strong/a");
-        $node2 = @$xpath->query("//*[@id='traffic-rank-content']/div/span[2]/div[2]/span/span/div/strong/a");
+        $node1 = @$xpath->query("//*[@id='traffic-rank-content']/div/span[2]/div[2]/span/span/h4/strong");
+        $node2 = @$xpath->query("//*[@id='traffic-rank-content']/div/span[2]/div[2]/span/span/div/strong");
 
         if ($node2->item(0)) {
             $rank = self::retInt(strip_tags($node2->item(0)->nodeValue));
